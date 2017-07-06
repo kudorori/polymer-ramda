@@ -1,0 +1,24 @@
+<link rel="import" href="../polymer/polymer-element.html">
+<script src="//cdnjs.cloudflare.com/ajax/libs/ramda/0.24.1/ramda.min.js"></script>
+
+<script>
+  /**
+   * `polymer-ramda`
+   *
+   *
+   * @customElement
+   * @polymer
+   * @demo demo/index.html
+   */
+  let polymerRamda = su => class extends su{
+    constructor(){
+      super();
+      for(let key in R){
+        this[`R_${key}`] = R[key];
+      }
+    }
+  }
+
+  console.log(polymerRamda)
+
+</script>

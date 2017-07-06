@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+
+    <title>polymer-ramda demo</title>
+
+    <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+
+    <link rel="import" href="../../iron-demo-helpers/demo-pages-shared-styles.html">
+    <link rel="import" href="../../iron-demo-helpers/demo-snippet.html">
+    <link rel="import" href="../polymer-ramda.html">
+
+    <custom-style>
+      <style is="custom-style" include="demo-pages-shared-styles">
+      </style>
+    </custom-style>
+  </head>
+  <body>
+    <demo-test></demo-test>
+    <dom-module id="demo-test">
+      <template>
+        <style>
+        </style>
+      </template>
+      <script>
+        customElements.define("demo-test", class extends polymerRamda(Polymer.Element){
+          static get is() { return "demo-test"; }
+          static get properties() {
+            return {
+
+            }
+          }
+          static get observers() {
+            return []
+          }
+          constructor() {
+            super();
+          }
+          connectedCallback() {
+            super.connectedCallback();
+          }
+          disconnectedCallback(){
+            super.disconnectedCallback();
+          }
+          ready() {
+            super.ready();
+          }
+        })
+      </script>
+    </dom-module>
+  </body>
+</html>
