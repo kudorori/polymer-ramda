@@ -2,7 +2,8 @@
   "name": "polymer-ramda",
   "main": "polymer-ramda.html",
   "dependencies": {
-    "polymer": "Polymer/polymer#^2.0.0"
+    "polymer": "Polymer/polymer#^2.0.0",
+    "ramda": "^0.24.1"
   },
   "devDependencies": {
     "iron-demo-helpers": "PolymerElements/iron-demo-helpers#^2.0.0",
